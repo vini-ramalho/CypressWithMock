@@ -98,3 +98,13 @@ Cypress.Commands.add('login', (email, password) =>{
         cy.get(loc.LOGIN.PASSWORD).type(password)
         cy.get(loc.LOGIN.BTN_LOGIN).click()
 })
+
+Cypress.Commands.add('acessarMenuContas', () =>{
+        cy.get(loc.MENU.SETTINGS).click()
+        cy.get(loc.MENU.CONTAS).click()
+})
+
+Cypress.Commands.add('adicionarConta', conta =>{
+        cy.get(loc.CONTAS.NOME).type(conta);
+        cy.get(loc.CONTAS.BTN_SALVAR).click()
+})
