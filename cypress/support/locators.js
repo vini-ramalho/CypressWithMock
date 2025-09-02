@@ -14,7 +14,8 @@ const locators = {
         CONTAS: '[href="/contas"]',
         RESET: '[href="/reset"]',
         MOVIMENTACOES: '[data-test="menu-movimentacao"]',
-        EXTRATO:'[data-test="menu-extrato"]'
+        EXTRATO:'[data-test="menu-extrato"]',
+        HOME:'[data-test="menu-home"]'
 
     },
 
