@@ -109,3 +109,8 @@ Cypress.Commands.add('adicionarConta', conta =>{
         cy.get(loc.CONTAS.NOME).type(conta);
         cy.get(loc.CONTAS.BTN_SALVAR).click()
 })
+
+Cypress.Commands.add('acessarMenuMovimentacoes', () =>{
+        cy.get(loc.MENU.SETTINGS).click()
+        cy.get(loc.MENU.MOVIMENTACOES).click()
+})
